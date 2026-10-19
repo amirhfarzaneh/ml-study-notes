@@ -1,0 +1,18 @@
+[project]
+name = "ml-study-notes"
+version = "0.1.0"
+dependencies = [
+    "torch",
+    "torchvision",
+    "black",
+    "ruff"
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
